@@ -1,0 +1,50 @@
+/* CSS files add styling rules to your content */
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui,
+    helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial,
+    sans-serif;
+  margin: 2em;
+}
+
+h1 {
+  font-style: italic;
+  color: #373fff;
+}
+
+.github-icon {
+  fill: #151513;
+  color: #fff;
+}
+
+#chart_div {
+  height: 510px;
+}
+
+@media (prefers-color-scheme: dark) {
+  h1 {
+    color: #5bf;
+  }
+
+  body {
+    color: #ccc;
+    background: black;
+  }
+
+  a:link {
+    color: #5bf;
+  }
+
+  a:visited {
+    color: #ccf;
+  }
+
+  .github-icon {
+    fill: #fff;
+    color: #151513;
+  }
+
+  #chart_div {
+    background-color: #eee;
+  }
+}
