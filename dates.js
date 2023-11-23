@@ -26,7 +26,7 @@ const councils = [
   ["Barry Warsaw", "2019", term_start_2019, term_end_2019],
   ["Brett Cannon", "2019", term_start_2019, term_end_2019],
   ["Carol Willing", "2019", term_start_2019, term_end_2019],
-  ["Nick Coghlan", "2019", term_start_2019, term_end_2019],
+  ["Alyssa Coghlan", "2019", term_start_2019, term_end_2019],
 
   ["Barry Warsaw", "2020", term_end_2019, term_end_2020],
   ["Brett Cannon", "2020", term_end_2019, term_end_2020],
