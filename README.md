@@ -8,8 +8,4 @@ Edit the councils in [dates.js](dates.js)
 
 ## Sources
 
-* https://peps.python.org/pep-8100/
-* https://peps.python.org/pep-8101/
-* https://peps.python.org/pep-8102/ 
-* https://peps.python.org/pep-8103/
-* https://peps.python.org/pep-8104/
+* https://peps.python.org/topic/governance/

@@ -15,7 +15,8 @@ const term_end_2019 = date(2019, 12, 16, 0, 0);
 const term_end_2020 = date(2020, 12, 16, 0, 0);
 const term_end_2021 = date(2021, 12, 16, 0, 0);
 const term_end_2022 = date(2022, 12, 15, 0, 0);
-const term_end_2023 = date(2023, 12, 15, 0, 0); // TBC
+const term_end_2023 = date(2023, 12, 11, 0, 0);
+const term_end_2024 = date(2024, 12, 11, 0, 0); // TBC
 
 const bdfl = [
     [ 'Guido van Rossum', 'BDFL', python_invented, term_start_2019 ]
@@ -51,6 +52,12 @@ const councils = [
   ["Gregory P. Smith", "2023", term_end_2022, term_end_2023],
   ["Pablo Galindo Salgado", "2023", term_end_2022, term_end_2023],
   ["Thomas Wouters", "2023", term_end_2022, term_end_2023],
+
+  ["Barry Warsaw", "2024", term_end_2023, term_end_2024],
+  ["Emily Morehouse", "2024", term_end_2023, term_end_2024],
+  ["Gregory P. Smith", "2024", term_end_2023, term_end_2024],
+  ["Pablo Galindo Salgado", "2024", term_end_2023, term_end_2024],
+  ["Thomas Wouters", "2024", term_end_2023, term_end_2024],
 ];
 
 const bdfl_and_councils = bdfl.concat(councils);
