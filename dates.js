@@ -16,46 +16,58 @@ const term_end_2020 = date(2020, 12, 16, 0, 0);
 const term_end_2021 = date(2021, 12, 16, 0, 0);
 const term_end_2022 = date(2022, 12, 15, 0, 0);
 const term_end_2023 = date(2023, 12, 11, 0, 0);
-const term_end_2024 = date(2024, 12, 11, 0, 0); // TBC
+const term_end_2024 = date(2024, 12, 11, 0, 0);
+const term_end_2025 = date(2025, 12, 11, 0, 0); // TBC
 
 const bdfl = [["Guido van Rossum", "BDFL", python_invented, term_start_2019]];
 
+function council(year, start, end, members) {
+  return members.map((member) => [member, year, start, end]);
+}
+
 const councils = [
-  ["Guido van Rossum", "2019", term_start_2019, term_end_2019],
-  ["Alyssa Coghlan", "2019", term_start_2019, term_end_2019],
-  ["Barry Warsaw", "2019", term_start_2019, term_end_2019],
-  ["Brett Cannon", "2019", term_start_2019, term_end_2019],
-  ["Carol Willing", "2019", term_start_2019, term_end_2019],
-
-  ["Barry Warsaw", "2020", term_end_2019, term_end_2020],
-  ["Brett Cannon", "2020", term_end_2019, term_end_2020],
-  ["Carol Willing", "2020", term_end_2019, term_end_2020],
-  ["Thomas Wouters", "2020", term_end_2019, term_end_2020],
-  ["Victor Stinner", "2020", term_end_2019, term_end_2020],
-
-  ["Barry Warsaw", "2021", term_end_2020, term_end_2021],
-  ["Brett Cannon", "2021", term_end_2020, term_end_2021],
-  ["Carol Willing", "2021", term_end_2020, term_end_2021],
-  ["Pablo Galindo Salgado", "2021", term_end_2020, term_end_2021],
-  ["Thomas Wouters", "2021", term_end_2020, term_end_2021],
-
-  ["Brett Cannon", "2022", term_end_2021, term_end_2022],
-  ["Gregory P. Smith", "2022", term_end_2021, term_end_2022],
-  ["Pablo Galindo Salgado", "2022", term_end_2021, term_end_2022],
-  ["Petr Viktorin", "2022", term_end_2021, term_end_2022],
-  ["Thomas Wouters", "2022", term_end_2021, term_end_2022],
-
-  ["Brett Cannon", "2023", term_end_2022, term_end_2023],
-  ["Emily Morehouse", "2023", term_end_2022, term_end_2023],
-  ["Gregory P. Smith", "2023", term_end_2022, term_end_2023],
-  ["Pablo Galindo Salgado", "2023", term_end_2022, term_end_2023],
-  ["Thomas Wouters", "2023", term_end_2022, term_end_2023],
-
-  ["Barry Warsaw", "2024", term_end_2023, term_end_2024],
-  ["Emily Morehouse", "2024", term_end_2023, term_end_2024],
-  ["Gregory P. Smith", "2024", term_end_2023, term_end_2024],
-  ["Pablo Galindo Salgado", "2024", term_end_2023, term_end_2024],
-  ["Thomas Wouters", "2024", term_end_2023, term_end_2024],
+  ...council("2019", term_start_2019, term_end_2019, [
+    "Guido van Rossum",
+    "Alyssa Coghlan",
+    "Barry Warsaw",
+    "Brett Cannon",
+    "Carol Willing",
+  ]),
+  ...council("2020", term_end_2019, term_end_2020, [
+    "Barry Warsaw",
+    "Brett Cannon",
+    "Carol Willing",
+    "Thomas Wouters",
+    "Victor Stinner",
+  ]),
+  ...council("2021", term_end_2020, term_end_2021, [
+    "Barry Warsaw",
+    "Brett Cannon",
+    "Carol Willing",
+    "Pablo Galindo Salgado",
+    "Thomas Wouters",
+  ]),
+  ...council("2022", term_end_2021, term_end_2022, [
+    "Brett Cannon",
+    "Gregory P. Smith",
+    "Pablo Galindo Salgado",
+    "Petr Viktorin",
+    "Thomas Wouters",
+  ]),
+  ...council("2023", term_end_2022, term_end_2023, [
+    "Brett Cannon",
+    "Emily Morehouse",
+    "Gregory P. Smith",
+    "Pablo Galindo Salgado",
+    "Thomas Wouters",
+  ]),
+  ...council("2024", term_end_2023, term_end_2024, [
+    "Barry Warsaw",
+    "Emily Morehouse",
+    "Gregory P. Smith",
+    "Pablo Galindo Salgado",
+    "Thomas Wouters",
+  ]),
 ];
 
 const bdfl_and_councils = bdfl.concat(councils);
