@@ -30,7 +30,7 @@ h1 {
 }
 
 #chart_div {
-  height: 510px;
+  height: 550px;
 }
 
 @media (prefers-color-scheme: dark) {
