@@ -18,7 +18,8 @@ const termDates = {
   term_end_2022: date(2022, 12, 15),
   term_end_2023: date(2023, 12, 11),
   term_end_2024: date(2024, 12, 10),
-  term_end_2025: date(2025, 12, 10),
+  term_end_2025: date(2025, 12, 13),
+  term_end_2026: date(2026, 12, 13), // TBC
 };
 
 const bdfl = [
@@ -74,6 +75,13 @@ const councils = [
     "Emily Morehouse",
     "Gregory P. Smith",
     "Pablo Galindo Salgado",
+  ]),
+  ...council(2026, [
+    "Barry Warsaw",
+    "Donghee Na",
+    "Pablo Galindo Salgado",
+    "Savannah Ostrowski",
+    "Thomas Wouters",
   ]),
 ];
 
